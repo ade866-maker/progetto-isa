@@ -14,9 +14,6 @@ Il progetto consiste nella realizzazione di una, seppur semplice, Web-App per la
 ### Requisiti
 Affinchè il progetto funzioni è necessario importate il database "db.bacpac" all'intero del software Microsoft SQL Server Management Studio ed abilitare il protocollo TCP/IP come spiegato dalla seguente guida. Solo sucessivamente è possibile avviare il progetto tramite IDE.
 
-### Diagramma ER
-![Screenshot](tabelle_db.PNG)
-
 ### Struttura del Progetto
 Il progetto è realizzato nel pieno rispetto del pattern Model-view-controller (MVC) caratterizzato da un model che fornisce i metodi utili per l'accesso all'applicazione, una view che si occupa della visualizzazione dei dati contenuti nel model e dell'interazione con l'utente ed infine un controller che riceve i comandi dell'utente andando a modificare gli altri componenti.
 
@@ -66,11 +63,11 @@ Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
  
  ### Schermate di esempio
  #### Schermata Home
-![Screenshot](image/home.PNG)
+![home](image/home.PNG)
  #### Schermata Libri
-![Screenshot](image/libri.PNG)
+![libri](image/libri.PNG)
  #### Schermata Ordini
-![Screenshot](image/ordini.PNG)
+![ordini](image/ordini.PNG)
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
