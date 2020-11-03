@@ -3,7 +3,7 @@
 ### Introduzione
 Il progetto consiste nella realizzazione di una Web-App per la gestione di diverse librerie. Nello specifico sono state implementate le seguenti funzionalità:
 
-  - Inserimento, modifica e cancellazione dei libri disponibili per l'inserimento in una data libreria
+  - Inserimento, modifica e cancellazione dei libri disponibili per l'inserimento in una data libreria.
   - Inserimento, modifica e cancellazione delle librerie con particolare riferimento alla locazione delle stesse e dei libri disponibili.
   - Inserimento, modifica e cancellazione dei clienti interessati ad effettuare ordini presso le diverse librerie.
   - Realizzazione di ordini con riferimento ai libri acquistati, alla libreria d'interesse e al cliente che li ha originati.
