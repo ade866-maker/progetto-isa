@@ -53,7 +53,7 @@ La documentazione è stata generata in maniera automatica attraverso il comando:
 ```sh
 $ maven site
 ```
-Ed è possibile trovarla all'interno della cartella "taget/site". Nella stessa cartella sono state generate anche le apidocs.
+Ed è possibile trovarla all'interno della cartella "target/site". Nella stessa cartella è presente anche un riferimento alle apidocs.
 
 
 
