@@ -7,9 +7,10 @@ Il progetto consiste nella realizzazione di una, seppur semplice, Web-App per la
   - Inserimento, modifica e cancellazione delle librerie con particolare riferimento alla locazione delle stesse e dei libri disponibili.
   - Inserimento, modifica e cancellazione dei clienti interessati ad effettuare ordini presso le diverse librerie.
   - Realizzazione di ordini con riferimento ai libri acquistati, alla libreria d'interesse e al cliente che li ha originati.
+
   
 ### Diagramma ER
-![Screenshot](image/ER.jpeg)
+![](image/ER.jpeg)
 
 ### Requisiti
 Affinchè il progetto funzioni è necessario importate il database "db.bacpac" all'intero del software Microsoft SQL Server Management Studio ed abilitare il protocollo TCP/IP come spiegato dalla seguente guida. Solo sucessivamente è possibile avviare il progetto tramite IDE.
