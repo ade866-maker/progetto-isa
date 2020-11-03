@@ -7,6 +7,15 @@ Il progetto consiste nella realizzazione di una, seppur semplice, Web-App per la
   - Inserimento, modifica e cancellazione delle librerie con particolare riferimento alla locazione delle stesse e dei libri disponibili.
   - Inserimento, modifica e cancellazione dei clienti interessati ad effettuare ordini presso le diverse librerie.
   - Realizzazione di ordini con riferimento ai libri acquistati, alla libreria d'interesse e al cliente che li ha originati.
+  
+### Diagramma ER
+![Screenshot](ER.jpeg)
+
+### Requisiti
+Affinchè il progetto funzioni è necessario importate il database "db.bacpac" all'intero del software Microsoft SQL Server Management Studio ed abilitare il protocollo TCP/IP come spiegato dalla seguente guida. Solo sucessivamente è possibile avviare il progetto tramite IDE.
+
+### Diagramma ER
+![Screenshot](tabelle_db.PNG)
 
 ### Struttura del Progetto
 Il progetto è realizzato nel pieno rispetto del pattern Model-view-controller (MVC) caratterizzato da un model che fornisce i metodi utili per l'accesso all'applicazione, una view che si occupa della visualizzazione dei dati contenuti nel model e dell'interazione con l'utente ed infine un controller che riceve i comandi dell'utente andando a modificare gli altri componenti.
@@ -48,11 +57,20 @@ $ maven site
 Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
 
 
+
 ### Da implementare
 
  - Modifica e cancellazione di ordini
  - Definizione di nuovi test sia di unità che d'integrazione
  - Utilizzo di CSS per rendere GUI più user-friendly
+ 
+ ### Schermate di esempio
+ #### Schermata Home
+![Screenshot](home.PNG)
+ #### Schermata Libri
+![Screenshot](libri.PNG)
+ #### Schermata Libri
+![Screenshot](ordini.PNG)
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
@@ -64,6 +82,8 @@ Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
    [Thymeleaf]: <https://www.thymeleaf.org/>
    [Junit 5]: <https://junit.org/junit5/>
    [Selenium]: <https://www.selenium.dev/>
+   [guida]: <https://store.oceansystems.com/knowledgebase/quickdme-faqs/sql-server-sql-express/configure-sql-express-server-host-enable-tcp-ip-firewall-settings/>
+   
 
    
    
