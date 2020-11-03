@@ -65,12 +65,12 @@ Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
  
  ## Schermate di esempio
  #### Schermata Home
-![home](image/home.PNG)
+<kbd>![home](image/home.PNG)</kbd>
 
  #### Schermata Libri
-![libri](image/libri.PNG)
+<kbd>![libri](image/libri.PNG)</kbd>
  #### Schermata Ordini
-![ordini](image/ordini.PNG)
+<kbd>![ordini](image/ordini.PNG)</kbd>
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
