@@ -9,7 +9,7 @@ Il progetto consiste nella realizzazione di una, seppur semplice, Web-App per la
   - Realizzazione di ordini con riferimento ai libri acquistati, alla libreria d'interesse e al cliente che li ha originati.
   
 ### Diagramma ER
-![Screenshot](ER.jpeg)
+![Screenshot](image/ER.jpeg)
 
 ### Requisiti
 Affinchè il progetto funzioni è necessario importate il database "db.bacpac" all'intero del software Microsoft SQL Server Management Studio ed abilitare il protocollo TCP/IP come spiegato dalla seguente guida. Solo sucessivamente è possibile avviare il progetto tramite IDE.
@@ -66,11 +66,11 @@ Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
  
  ### Schermate di esempio
  #### Schermata Home
-![Screenshot](home.PNG)
+![Screenshot](image/home.PNG)
  #### Schermata Libri
-![Screenshot](libri.PNG)
- #### Schermata Libri
-![Screenshot](ordini.PNG)
+![Screenshot](image/libri.PNG)
+ #### Schermata Ordini
+![Screenshot](image/ordini.PNG)
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
