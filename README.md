@@ -13,7 +13,8 @@ Il progetto consiste nella realizzazione di una Web-App per la gestione di diver
 ![](image/ER.jpeg)
 
 ### Requisiti
-Affinchè il progetto funzioni è necessario importare il database "db.bacpac" all'intero del software Microsoft SQL Server Management Studio ed abilitare il protocollo TCP/IP come spiegato dalla seguente [guida]. Solo sucessivamente è possibile avviare il progetto tramite IDE.
+Affinchè il progetto funzioni è necessario importare il database "db.bacpac" all'intero del software Microsoft SQL Server Management Studio ed abilitare il protocollo TCP/IP come spiegato dalla seguente [guida]. Solo sucessivamente è possibile avviare il progetto tramite IDE. Di seguito viene presentata la struttura del database "esame" alla base del progetto.
+![](image/tabelle_db.PNG)
 
 ### Struttura del Progetto
 Il progetto è realizzato nel pieno rispetto del pattern Model-view-controller (MVC) caratterizzato da un model che fornisce i metodi utili per l'accesso all'applicazione, una view che si occupa della visualizzazione dei dati contenuti nel model e dell'interazione con l'utente ed infine un controller che riceve i comandi dell'utente andando a modificare gli altri componenti.
