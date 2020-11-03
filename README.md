@@ -49,21 +49,21 @@ I primi sono stati realizzati attraverso Junit5 e si occupano di effettuare test
 L'integration test invece è realizzato attraverso il framework Selenium: si occupa di simulare il comportamento dell'utente attraverso il browser web (Google Chrome) spostandosi tra le pagine web, inserendo dati e interrogando il database.
 
 ### Documentazione
-La documentazione è stata realizzata col comando:
+La documentazione è stata generata in maniera automatica attraverso il comando:
 ```sh
 $ maven site
 ```
-Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
+Ed è possibile trovarla all'interno della cartella "taget/site". Nella stessa cartella sono state generate anche le apidocs.
 
 
 
-### Da implementare
+### Da Implementare
 
  - Modifica e cancellazione di ordini
  - Definizione di nuovi test sia di unità che d'integrazione
  - Utilizzo di CSS per rendere GUI più user-friendly
  
- ## Schermate di esempio
+ ## Schermate di Esempio
  #### Schermata Home
 <kbd>![home](image/home.PNG)</kbd>
 
