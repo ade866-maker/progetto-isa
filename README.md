@@ -69,6 +69,10 @@ Ed è possibile trovarla all'interno della cartella "target/site". Nella stessa 
 
  #### Schermata Libri
 <kbd>![libri](image/libri.png)</kbd>
+#### Schermata Modifica Libro
+<kbd>![](image/modifica_libro.PNG)</kbd>
+#### Schermata Cancella Libro
+<kbd>![](image/cancella_libro.PNG)</kbd>
  #### Schermata Ordini
 <kbd>![ordini](image/ordini.PNG)</kbd>
 
