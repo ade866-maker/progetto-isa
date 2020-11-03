@@ -61,7 +61,7 @@ Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
  - Definizione di nuovi test sia di unità che d'integrazione
  - Utilizzo di CSS per rendere GUI più user-friendly
  
- ### Schermate di esempio
+ ## Schermate di esempio
  #### Schermata Home
 ![home](image/home.PNG)
  #### Schermata Libri
