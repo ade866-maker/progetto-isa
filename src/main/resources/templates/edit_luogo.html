@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="#" method="post" th:action="@{/editluogo}" th:object="${luogo}">
+            <table>
+            <tr><td>ID*</td><td><input type="number" min="1" th:field="*{id}" placeholder="id" required/></td></tr>
+            <tr><td>Città*</td><td><input type="text" th:field="*{Citta}" placeholder="Citta" required/></td></tr>
+            <tr><td>Via*</td><td><input type="text" th:field="*{via}" placeholder="via" required/></td></tr>
+            <tr><td>Numero civico*</td><td><input type="number" min="1" th:field="*{n_civico}" placeholder="n_civico" required/></td></tr>
+            <tr><td>*=Campo obbligatorio</td></tr>
+            <tr><td><input type="submit" value="Salva" id="send"/></td></tr>
+        </table>
+        </form>
+    </body>
+</html>

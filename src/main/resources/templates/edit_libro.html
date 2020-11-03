@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="#" method="post" th:action="@{/editbook}" th:object="${libro}">
+            <table>
+              <tr><td>ID*</td><td><input type="number" min="1" th:field="*{id}" placeholder="id" required/></td>
+                  <tr><td>Titolo*</td><td><input type="text" th:field="*{titolo}" placeholder="titolo" required/></td></tr>
+                  <tr><td>Autore*</td><td><input type="text" th:field="*{autore}" placeholder="autore" required/></td></tr>
+                  <tr><td>Genere*</td><td><input type="text" th:field="*{genere}" placeholder="genere" rquired/></td></tr>
+                  <tr><td>Anno di pubblicazione*</td><td><input type="number" min="0" max="3000" th:field="*{Anno_Pubblicazione}" placeholder="Anno_Pubblicazione"/></td></tr>
+                  <tr><td>*=Campo obbligatorio</td></tr>
+                  <tr><td><input id="send" type="submit" value="Salva"/></td></tr>
+            </table>
+        </form>
+    </body>
+</html>

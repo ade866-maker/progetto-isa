@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="#" method="post" th:action="@{/compra}" th:object="${compra}">
+            <table>
+                <tr><td>ID persona</td><td><select th:field="*{id_persona}" id="dd1">
+            <option th:each="persona: ${Listapersona}" th:value="${persona.id}" th:text="${persona.id}"></option>
+            </select></td></tr>
+                        <tr><td>ID libreria</td><td><select th:field="*{id_libreria}" id="dd2">
+            <option th:each="libreria: ${Listalibreria}" th:value="${libreria.id}" th:text="${libreria.id}"></option>
+            </select></td></tr>
+         <tr><td>Costo totale*</td><td><input type="number" min="0" th:field="*{costo_totale}" placeholder="costo_totale" required/></td></tr>
+                 <tr><td>Numero libri*</td><td><input type="number" min="0" th:field="*{numero_libri}" placeholder="numero_libri"/></td></tr>
+                         <tr><td>Data acquisto*</td><td><input type="date" th:field="*{data_acquisto}" placeholder="data_acquisto" required/></td></tr>
+                                 <tr><td>*=Campo obbligatorio</td></tr>
+                         <tr><td><input id="send" type="submit" value="Salva"/></td></tr>
+            </table>
+        </form>
+    </body>
+</html>

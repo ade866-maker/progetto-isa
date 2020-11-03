@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>CONFERMA CANCELLAZIONE</div>
+        <p>Cancellare il libro "<span th:text="${libro.titolo}"></span>"?</p>
+        <form action="#" method="post" th:action="@{/do_deletebook}" th:object="${libro}">
+            <input th:field="*{id}" type="hidden"/>
+            <input id="sure" type="submit" value="Cancella"/>
+        </form>
+    </body>
+</html>

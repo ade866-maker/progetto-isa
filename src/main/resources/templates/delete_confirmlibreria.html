@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>CONFERMA CANCELLAZIONE</div>
+        <p>Cancella la libreria <span th:text="${libreria.id}"></span></p>
+        <form action="#" method="post" th:action="@{/do_deletelibreria}" th:object="${libreria}">
+            <input type="hidden" th:field="*{id}"/>
+            <input type="submit" value="Cancella" id="sure"/>
+        </form>
+    </body>
+</html>
