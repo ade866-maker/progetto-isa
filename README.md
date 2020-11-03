@@ -68,7 +68,7 @@ Ed è possibile trovarla all'interno della cartella "docs" insieme alle api.
 <kbd>![home](image/home.PNG)</kbd>
 
  #### Schermata Libri
-<kbd>![libri](image/libri.PNG)</kbd>
+<kbd>![libri](image/libri.png)</kbd>
  #### Schermata Ordini
 <kbd>![ordini](image/ordini.PNG)</kbd>
 
