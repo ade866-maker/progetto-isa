@@ -65,8 +65,7 @@ Ed è possibile trovarla all'interno della cartella "target/site". Nella stessa 
  
  ## Schermate di Esempio
  #### Schermata Home
-<kbd>![home](image/home.PNG)</kbd>
-
+<kbd>![home](image/home.png)</kbd>
  #### Schermata Libri
 <kbd>![libri](image/libri.png)</kbd>
 #### Schermata Modifica Libro
