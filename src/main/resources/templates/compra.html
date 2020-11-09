@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-    </head>
+<head>
+<title>Compra</title>
+<meta charset="UTF-8"/>
+<style>
+.beta th{
+    background-color:orange;
+    color:white;
+}
+.beta tr:nth-child(2n){
+    background-color: pink;
+}
+table{
+    border-collapse: collapse;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
     <body>
+        <div class="topnav">
         <a href="/">Home</a>
         <a href="/book" id="b">Libri</a>
         <a href="/persona" id="c">Persone</a>
         <a href="/luogo" id="e">Luogo</a>
         <a href="/libreria">Libreria</a>
-        <a href="/compra" id="a">Ordini</a>
+        <a href="/compra" class="active" id="a">Ordini</a>
+        </div>
         <br><br><br>
-        <div>Inserisci nuovo ordine</div>
+        <h3 align="center">Inserisci nuovo ordine</h3>
         <form action="#" method="post" th:action="@{/compra}" th:object="${compra}">
-            <table>
+            <table align="center">
                 <tr><td>ID persona</td><td><select th:field="*{id_persona}" id="dd1">
             <option th:each="persona: ${Listapersona}" th:value="${persona.id}" th:text="${persona.id}"></option>
             </select></td></tr>
@@ -29,8 +63,8 @@
             </table>
         </form>
         <br><br><br>
-        <table cellspacing="30">
-            <tr align='center'><td><b>ID_PERSONA</b></td><td><b>ID_LIBRERIA</b></td><td><b>COSTO TOTALE</b></td><td><b>NUMERO LIBRI</b></td><td><b>DATA ACQUISTO</b></td></tr>
+        <table class="beta" border="1" align="center">
+            <tr align='center'><th><b>ID_PERSONA</b></th><th><b>ID_LIBRERIA</b></th><th><b>COSTO TOTALE</b></th><th><b>NUMERO LIBRI</b></th><th><b>DATA ACQUISTO</b></th></tr>
             <tr th:each="compra: ${Listacompra}" align='center'>
                 <td th:text="${compra.id_persona}"></td>
                 <td th:text="${compra.id_libreria}"></td>

@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-    </head>
+<head>
+<title>Persone</title>
+<meta charset="UTF-8"/>
+<style>
+.beta th{
+    background-color:orange;
+    color:white;
+}
+.beta tr:nth-child(2n){
+    background-color: pink;
+}
+table{
+    border-collapse: collapse;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
     <body>
+        <div class="topnav">
         <a href="/">Home</a>
         <a href="/book" id="b">Libri</a>
-        <a href="/persona" id="c">Persone</a>
+        <a href="/persona" class="active" id="c">Persone</a>
         <a href="/luogo" id="e">Luogo</a>
         <a href="/libreria">Libreria</a>
         <a href="/compra" id="a">Ordini</a>
+        </div>
         <br><br><br>
-        <div>Inserisci Persona</div>
+        <h3 align="center">Inserisci una Persona</h3>
         <form action="#" method="post" th:action="@{/persona}" th:object="${persona}">
-            <table>
+            <table align="center">
                 <tr><td>ID*</td><td><input type="number" min="1" th:field="*{id}" placeholder="id" required/></td></tr>
                 <tr><td>Nome Cognome*</td><td><input type="text" th:field="*{Nome_Cognome}" placeholder="Nome_Cognome" required=""/></td></tr>
                 <tr><td>Sesso</td><td>
@@ -28,16 +62,16 @@
             </table>
         </form>
         <br><br><br>
-        <table cellspacing="30">
-            <tr align='center'><td><b>ID</b></td><td><b>NOME COGNOME</b></td><td><b>SESSO</b></td><td><b>CELLULARE</b></td><td><b>EMAIL</b></td></tr>
+        <table class="beta" border="1" align="center">
+            <tr align='center'><th><b>ID</b></th><th><b>NOME COGNOME</b></th><th><b>SESSO</b></th><th><b>CELLULARE</b></th><th><b>EMAIL</b></th><th><b>MODIFICA</b></th><th><b>CANCELLA</b></th></tr>
             <tr th:each="persona: ${Listapersona}" align='center'>
             <td th:text="${persona.id}"></td>   
             <td th:text="${persona.Nome_Cognome}"></td>
             <td th:text="${persona.sesso}"></td>
             <td th:text="${persona.cellulare}"></td>
             <td th:text="${persona.email}"></td>
-            <td><a href="#" th:href="@{|/edit/persona${persona.id}|}">Modifica</a></td>
-            <td><a href="#" th:href="@{|/delete/persona${persona.id}|}">Cancella</a></td> 
+            <td><a href="#" th:href="@{|/edit/persona${persona.id}|}"><img src="/img/edit.png" width="15" height="15"/></a></td>
+            <td><a href="#" th:href="@{|/delete/persona${persona.id}|}"><img src="/img/delete.png" width="15" height="15"/></a></td> 
             </tr>
         </table>
     </body>

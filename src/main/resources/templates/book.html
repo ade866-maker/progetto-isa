@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+<head>
+<title>Libri</title>
+<meta charset="UTF-8"/>
+<style>
+.beta th{
+    background-color:orange;
+    color:white;
+}
+.beta tr:nth-child(2n){
+    background-color: pink;
+}
+table{
+    border-collapse: collapse;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
     </head>
     <body>
+        <div class="topnav" align="top">
         <a href="/">Home</a>
-        <a href="/book" id="b">Libri</a>
+        <a href="/book" class="active" id="b">Libri</a>
         <a href="/persona" id="c">Persone</a>
         <a href="/luogo" id="e">Luogo</a>
         <a href="/libreria">Libreria</a>
         <a href="/compra" id="a">Ordini</a>
+        </div>
         <br><br><br>
-        <div>Inserisci Libro</div>
+        <h3 align="center">Inserisci un Libro</h3>
       <form action="#" method="post" th:action="@{/book}" th:object="${libro}">
-          <table>
+          <table align="center">
               <tr><td>ID*</td><td><input type="number" th:field="*{id}" placeholder="id" min="1" required/></td>
                   <tr><td>Titolo*</td><td><input type="text" th:field="*{titolo}" placeholder="titolo" required/></td></tr>
                   <tr><td>Autore*</td><td><input type="text" th:field="*{autore}" placeholder="autore" required/></td></tr>
@@ -25,16 +59,16 @@
             </table>
         </form>
         <br><br><br>
-        <table cellspacing="30">
-            <tr align='center'><td><b>ID</b></td><td><b>TITOLO</b></td><td><b>AUTORE</b></td><td><b>GENERE</b></td><td><b>ANNO PUBBLICAZIONE</b></td></tr>
+        <table class="beta" border="1" align="center">
+            <tr align='center'><th><b>ID</b></th><th><b>TITOLO</b></th><th><b>AUTORE</b></th><th><b>GENERE</b></th><th><b>ANNO PUBBLICAZIONE</b></th><th><b>MODIFICA</b></th><th><b>CANCELLA</b></th></tr>
             <tr th:each="libro: ${Listalibri}" align='center'>
                 <td th:text="${libro.id}"></p></td>
                 <td th:text="${libro.titolo}"></td>
                 <td th:text="${libro.autore}"></td>
                 <td th:text="${libro.genere}"></td>
                 <td th:text="${libro.Anno_Pubblicazione}"></td>
-                <td><a href="#" th:href="@{|/edit/book${libro.id}|}">Modifica</a></td>
-                <td><a href="#" th:href="@{|/delete/book${libro.id}|}">Cancella</a></td> 
+                <td><a href="#" th:href="@{|/edit/book${libro.id}|}"><img src="/img/edit.png" width="15" height="15"/></a></td>
+                <td><a href="#" th:href="@{|/delete/book${libro.id}|}"><img src="/img/delete.png" width="15" height="15"/></a></td> 
             </tr>
         </table>
     </body>

@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-    </head>
+<head>
+<title>Home</title>
+<meta charset="UTF-8"/>
+<style>
+.beta th{
+    background-color:orange;
+    color:white;
+}
+.beta tr:nth-child(2n){
+    background-color: pink;
+}
+table{
+    border-collapse: collapse;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
     <body>
-        <a href="/">Home</a>
+        <div class="topnav">
+        <a href="/" class="active">Home</a>
         <a href="/book" id="b">Libri</a>
         <a href="/persona" id="c">Persone</a>
         <a href="/luogo" id="e">Luogo</a>
         <a href="/libreria">Libreria</a>
         <a href="/compra" id="a">Ordini</a>
-        <br><br><br>
+        </div>
+        <br>
                     <h3>Benvenuto nell'applicazione!</h3>
                     <text>Al momento ti trovi nella Home che può darti accesso a:</text>
                     <ul>
-                        <li>Sezione ordini</li>
-                        <li>Sezione libri</li>
-                        <li>Sezione persone</li>
+                        <li>Sezione libri in cui potrai:</li>
+                        <ul>
+                            <li>Inserire un nuovo libro</li>
+                            <li>Modificare i libri esistenti</li>
+                            <li>Cancellare i libri presenti</li>
+                        </ul>
+                        <br>
+                        <li>Sezione persone in cui potrai</li>
+                        <ul>
+                            <li>Inserire un nuovo utente</li>
+                            <li>Modificare gli utenti esistenti</li>
+                            <li>Cancellare gli utenti presenti</li>
+                        </ul>
+                        <br>
                         <li>Sezione luogo</li>
+                        <ul>
+                            <li>Inserire una nuova posizione</li>
+                            <li>Modificare le posizioni esistenti</li>
+                            <li>Cancellare le posizioni presenti</li>
+                        </ul>
+                        <br>
                         <li>Sezione libreria</li>
+                        <ul>
+                            <li>Inserire una nuova libreria</li>
+                            <li>Modificare le librerie presenti</li>
+                            <li>Cancellare le librerie presenti</li>
+                        </ul>
+                        <br>
+                        <li>Sezione ordini</li>
+                        <ul>
+                            <li>Inserire un nuovo ordine</li>
+                            <li>Modificare gli ordini esistenti (In lavorazione)</li>
+                            <li>Cancellare gli ordini esistenti (In lavorazione)</li>
+                        </ul>
                     </ul>
     </body>
 </html>

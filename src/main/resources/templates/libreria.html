@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-    </head>
+<head>
+<title>Libreria</title>
+<meta charset="UTF-8"/>
+<style>
+.beta th{
+    background-color:orange;
+    color:white;
+}
+.beta tr:nth-child(2n){
+    background-color: pink;
+}
+table{
+    border-collapse: collapse;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
     <body>
+        <div class="topnav">
         <a href="/">Home</a>
         <a href="/book" id="b">Libri</a>
         <a href="/persona" id="c">Persone</a>
         <a href="/luogo" id="e">Luogo</a>
-        <a href="/libreria">Libreria</a>
+        <a href="/libreria" class="active">Libreria</a>
         <a href="/compra" id="a">Ordini</a>
+        </div>
         <br><br><br>
-        <div>Inserisci Libreria</div>
+        <h3 align="center">Inserisci una Libreria</h3>
       <form action="#" method="post" th:action="@{/libreria}" th:object="${libreria}">
-          <table>
+          <table align="center">
               <tr><td>ID*</td><td><input type="number" min="1" th:field="*{id}" placeholder="id" required/></td></tr>
               <tr><td>ID luogo</td><td><select th:field="*{id_luogo}" id="dd1">
             <option th:each="luogo: ${Listaluogo}" th:value="${luogo.id}" th:text="${luogo.id}"></option>
@@ -32,16 +66,16 @@
         
         
         <br><br><br>
-        <table cellspacing="30">
-            <tr align='center'><td><b>ID</b></td><td><b>ID_LUOGO</b></td><td><b>NOME LIBRO</b></td><td><b>NUMERO COPIE</b></td><td><b>COSTO</b></td></tr>
+        <table class="beta" border="1" align="center">
+            <tr align='center'><th><b>ID</b></th><th><b>ID_LUOGO</b></th><th><b>NOME LIBRO</b></th><th><b>NUMERO COPIE</b></th><th><b>COSTO</b></th><th><b>MODIFICA</b></th><th><b>CANCELLA</b></th></tr>
             <tr th:each="libreria: ${Listalibreria}" align='center'>
                 <td th:text="${libreria.id}"></p></td>
                 <td th:text="${libreria.id_luogo}"></td>
                 <td th:text="${libreria.Nome_libro}"></td>
                 <td th:text="${libreria.Numero_copie}"></td>
                 <td th:text="${libreria.Costo}"></td>
-                <td><a href="#" th:href="@{|/edit/libreria${libreria.id}|}">Modifica</a></td>
-                <td><a href="#" th:href="@{|/delete/libreria${libreria.id}|}">Cancella</a></td>
+                <td><a href="#" th:href="@{|/edit/libreria${libreria.id}|}"><img src="/img/edit.png" width="15" height="15"/></a></td>
+                <td><a href="#" th:href="@{|/delete/libreria${libreria.id}|}"><img src="/img/delete.png" width="15" height="15"/></a></td>
             </tr>
         </table>
     </body>
