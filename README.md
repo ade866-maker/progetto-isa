@@ -29,6 +29,10 @@ L'intero sistema inoltre adotta un'approccio REST basato sui metodi:
   - PUT: per l'inserimento di nuove risorse.
   - POST: per l'aggiornamento di risorse esistenti.
   - DELETE: per la cancellazione di risorse non più necessarie.
+  
+### Diagramma UML
+Di seguito vi è riportato il diagramma UML generato automaticamente da NetBeans attraverso il plugin "easyUML".
+![](image/uml.png)
 
 ### Funzionamento del Progetto
 All'avvio viene avviato il framework Spring Boot che si fa carico della corretta cooperazione tra front-end e back-end. Nello specifico in termini di front-end vengono gestiti tutti i comandi forniti dall'utente attraverso le pagine html. 
@@ -89,6 +93,7 @@ Ed è possibile trovarla all'interno della cartella "target/site". Nella stessa 
    [Thymeleaf]: <https://www.thymeleaf.org/>
    [Junit 5]: <https://junit.org/junit5/>
    [Selenium]: <https://www.selenium.dev/>
+   [easyUML]: <http://plugins.netbeans.org/plugin/55435/easyuml>
    [guida]: <https://store.oceansystems.com/knowledgebase/quickdme-faqs/sql-server-sql-express/configure-sql-express-server-host-enable-tcp-ip-firewall-settings/>
    
 
