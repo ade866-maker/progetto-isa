@@ -67,9 +67,10 @@ Ed è possibile trovarla all'interno della cartella "target/site". Nella stessa 
 
 ### Da Implementare
 
- - Modifica e cancellazione di ordini
- - Definizione di nuovi test sia di unità che d'integrazione
- - Utilizzo di CSS per rendere GUI più user-friendly
+ - Modifica e cancellazione di ordini;
+ - Definire relazioni OneToMany e ManyToOne;
+ - Definizione di nuovi test sia di unità che d'integrazione;
+ - Utilizzo di CSS per rendere GUI più user-friendly.
  
  ## Schermate di Esempio
  #### Schermata Home
