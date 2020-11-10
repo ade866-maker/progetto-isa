@@ -31,7 +31,7 @@ L'intero sistema inoltre adotta un'approccio REST basato sui metodi:
   - DELETE: per la cancellazione di risorse non più necessarie.
   
 ### Diagramma UML
-Di seguito vi è riportato il diagramma UML generato automaticamente da NetBeans attraverso il plugin "easyUML".
+Di seguito vi è riportato il diagramma UML generato automaticamente da NetBeans attraverso il plugin "[easyUML]".
 ![](image/uml.png)
 
 ### Funzionamento del Progetto
