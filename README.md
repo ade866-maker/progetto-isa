@@ -1,5 +1,9 @@
 # Progetto di Ingegneria del Software Avanzata
 
+### Specifica dei Requisiti
+I requisiti sono stati abbozzati al seguente link: <br>
+https://docs.google.com/document/d/1EYm16BJJPplbizFOS35LMd-UTJfY8WmNByf2jA-kp0g/edit?usp=sharing
+
 ### Introduzione
 Il progetto consiste nella realizzazione di una Web-App per la gestione di diverse librerie. Nello specifico sono state implementate le seguenti funzionalità:
 
